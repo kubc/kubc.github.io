@@ -10,6 +10,7 @@
 
 html {
   width: 100%;
+  height: 100%;
   font-size: 62.5%;
 }
 
@@ -87,22 +88,23 @@ nav a:visited {
 nav a::after {
   position: absolute;
   content: '';
-  top: 70%;
+  top: 90%;
   left: 0;
   width: 100%;
   height: 2px;
   border-radius: 2px;
   background-color: transparent;
+  transform: translateY(8px);
   transition: .2s;
 }
 
 nav .current::after {
-  top: 90%;
+  transform: translateY(0);
   background-color: #224;
 }
 
 nav a:hover::after {
-  top: 90%;
+  transform: translateY(0);
   background-color: #88f;
 }
 
@@ -126,8 +128,13 @@ main {
 #bidplay>p{
   line-height: 480px;
   vertical-align: middle;
-  font-size: 4em;
+  font-size: 16vw;
   font-weight: bold;
+}
+@media screen and (min-width: 800px) {
+  #bidplay>p{
+    font-size: 128px;
+  }
 }
 
 article {
@@ -248,7 +255,7 @@ main a:visited {
 }
 
 main a:hover {
-  transform: translateY(-2px);
+  transform: translate3d(0, -2px, 0);
   text-shadow: 0 3px 4px #8888;
 }
 
