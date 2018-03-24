@@ -6,6 +6,9 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -15,7 +18,6 @@ html {
 }
 
 body {
-  box-sizing: border-box;
   font-size: 1.8em;
   font-family: 'Rounded Mplus 1c';
   line-height: 2;
@@ -30,7 +32,6 @@ body {
 }
 
 #wrap {
-  box-sizing: border-box;
   width: auto;
   max-width: 960px;
   margin: 0 auto;
@@ -57,7 +58,6 @@ nav {
 }
 
 nav li {
-  box-sizing: border-box;
   display: inline-block;
   position: relative;
   flex-grow: 1;
@@ -66,13 +66,13 @@ nav li {
 }
 
 nav a {
-  box-sizing: border-box;
   display: inline-block;
   position: relative;
   padding: 8px;
   font-size: 1.2em;
   font-weight: bold;
   text-decoration: none;
+  -webkit-transition: .3s;
   transition: .3s;
 }
 
@@ -94,22 +94,25 @@ nav a::after {
   height: 2px;
   border-radius: 2px;
   background-color: transparent;
-  transform: translateY(8px);
+  -webkit-transform: translate3d(0, 8px, 0);
+  transform: translate3d(0, 8px, 0);
+  -webkit-transition: .2s;
   transition: .2s;
 }
 
 nav .current::after {
-  transform: translateY(0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   background-color: #224;
 }
 
 nav a:hover::after {
-  transform: translateY(0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   background-color: #88f;
 }
 
 main {
-  box-sizing: border-box;
   padding-bottom: 32px;
   width: 100%;
   overflow-x: hidden;
@@ -138,7 +141,6 @@ main {
 }
 
 article {
-  box-sizing: border-box;
   padding: 16px;
 }
 
@@ -148,7 +150,6 @@ article p {
 }
 
 #shinkan {
-  box-sizing: border-box;
   display: inline-block;
   background: white;
   padding: 16px;
@@ -169,7 +170,6 @@ article p {
 }
 
 main h1 {
-  box-sizing: border-box;
   margin: 16px;
   border-bottom: 4px solid #ada;
   color: #ada;
@@ -177,7 +177,6 @@ main h1 {
 }
 
 main h2 {
-  box-sizing: border-box;
   display: inline-block;
   padding: 4px 16px;
   color: #478;
@@ -215,6 +214,9 @@ main ul a::before {
 }
 
 .ul-links a>.svg-inline--fa {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
   padding-right: 4px;
   color: #224;
 }
@@ -229,11 +231,11 @@ main h4 {
 }
 
 main a {
-  box-sizing: border-box;
   position: relative;
   display: inline-block;
   text-decoration: none;
   text-shadow: 0 1px 2px #8884;
+  -webkit-transition: .3s;
   transition: .3s;
 }
 
@@ -244,6 +246,9 @@ main a[target='_blank']::after {
 }
 
 main a[target='_blank']>.svg-inline--fa {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
   padding-left: 8px;
   font-size: smaller;
 }
@@ -255,6 +260,7 @@ main a:visited {
 }
 
 main a:hover {
+  -webkit-transform: translate3d(0, -2px, 0);
   transform: translate3d(0, -2px, 0);
   text-shadow: 0 3px 4px #8888;
 }
