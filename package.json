@@ -8,8 +8,8 @@
   },
   "scripts": {
     "start": "npm run ejs && npm run serve",
-    "serve": "http-server docs -c-1 -o",
-    "ejs": "ejs-cli --base-dir src '*.ejs' --out docs"
+    "serve": "http-server -c-1 -o",
+    "ejs": "ejs-cli --base-dir src '*.ejs' --out ."
   },
   "repository": {
     "type": "git",
