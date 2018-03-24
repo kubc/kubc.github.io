@@ -1,0 +1,33 @@
+{
+  "name": "kubc.github.io",
+  "version": "1.0.0",
+  "description": "KUBC's official website.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "npm run ejs && npm run serve",
+    "serve": "http-server docs -c-1 -o",
+    "ejs": "ejs-cli --base-dir src '*.ejs' --out docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kubc/kubc.github.io.git"
+  },
+  "keywords": [
+    "contract",
+    "bridge",
+    "Kyoto",
+    "University"
+  ],
+  "author": {
+    "email": "kubc.stu@gmail.com",
+    "name": "kubc",
+    "url": "https://kubc.github.io"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "ejs-cli": "^2.0.1"
+  }
+}

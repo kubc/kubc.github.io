@@ -1,0 +1,259 @@
+@font-face {
+  font-family: 'Rounded Mplus 1c';
+  src: url(https://fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Regular.woff) format('woff');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.8em;
+  font-family: 'Rounded Mplus 1c';
+  line-height: 2;
+  text-align: center;
+  width: 100%;
+  /* background-color: #f8f8f8; */
+  background: #68a url(DYfoyUQUQAA_aqy.jpg) no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: luminosity;
+  background-position: center;
+  background-size: cover; 
+}
+
+#wrap {
+  box-sizing: border-box;
+  width: auto;
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #fefefef0;
+  box-shadow: 0 0 8px #8888;
+}
+
+header {
+  padding: 8px;
+  background-color: darkslategray;
+  color: whitesmoke;
+  line-height: 1.5;
+  box-shadow: 0 0 8px #8888;
+}
+
+nav {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 8px;
+  line-height: 1.2;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  flex-grow: 1;
+  padding: 4px;
+  list-style: none;
+}
+
+nav a {
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  padding: 8px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  transition: .3s;
+}
+
+nav .current {
+  pointer-events: none;
+}
+
+nav a:link,
+nav a:visited {
+  color: #336;
+}
+
+nav a::after {
+  position: absolute;
+  content: '';
+  top: 70%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background-color: transparent;
+  transition: .2s;
+}
+
+nav .current::after {
+  top: 90%;
+  background-color: #224;
+}
+
+nav a:hover::after {
+  top: 90%;
+  background-color: #88f;
+}
+
+main {
+  box-sizing: border-box;
+  padding-bottom: 32px;
+  width: 100%;
+  overflow-x: hidden;
+  color: #244;
+}
+
+#bidplay {
+  height: 480px;
+  background: #6bc url(DYfoyUQUQAA_aqy.jpg) no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: screen;
+  background-position: center;
+  background-size: cover;
+}
+
+#bidplay>p{
+  line-height: 480px;
+  vertical-align: middle;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+article {
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+article p {
+  text-align: left;
+  margin: 16px 10%;
+}
+
+#shinkan {
+  box-sizing: border-box;
+  display: inline-block;
+  background: white;
+  padding: 16px;
+  margin: 8px;
+  /* color: midnightblue; */
+  box-shadow: 0 0 4px #8884, 0 4px 4px #8884;
+}
+
+.question {
+  text-align: left;
+  font-weight: bold;
+  margin: 4px 10%;
+}
+
+.answer {
+  text-align: left;
+  margin: 0 12% 32px;
+}
+
+main h1 {
+  box-sizing: border-box;
+  margin: 16px;
+  border-bottom: 4px solid #ada;
+  color: #ada;
+  line-height: 1.2;
+}
+
+main h2 {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 4px 16px;
+  color: #478;
+  font-weight: bolder;
+  border-bottom: 4px solid #8ce;
+  border-radius: 2px;
+  line-height: 1.2;
+}
+
+main ul {
+  display: inline-block;
+  margin: 16px auto;
+}
+
+main ul>li {
+  position: relative;
+  font-size: larger;
+  list-style: none;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+main ul a::before {
+  display: none;
+}
+
+.ul-links>li {
+  text-align: left;
+  margin: 0 5%;
+}
+
+.ul-links a::before {
+  font-family: 'Font Awesome 5 Solid';
+  content: '\f0c1';
+}
+
+.ul-links a>.svg-inline--fa {
+  padding-right: 4px;
+  color: #224;
+}
+
+main h4 {
+  padding: 8px;
+  margin: 2px;
+  background: lightyellow;
+  color: burlywood;
+  border: 3px solid tan;
+  border-radius: 3px;
+}
+
+main a {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  text-shadow: 0 1px 2px #8884;
+  transition: .3s;
+}
+
+main a[target='_blank']::after {
+  display: none;
+  font-family: "Font Awesome 5 Solid";
+  content: '\f35d'
+}
+
+main a[target='_blank']>.svg-inline--fa {
+  padding-left: 8px;
+  font-size: smaller;
+}
+
+main a:link,
+main a:visited {
+  color: #763;
+  background: transparent;
+}
+
+main a:hover {
+  transform: translateY(-2px);
+  text-shadow: 0 3px 4px #8888;
+}
+
+footer {
+  clear: both;
+  background-color: #333;
+  color: #eee;
+}
