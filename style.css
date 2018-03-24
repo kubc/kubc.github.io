@@ -24,11 +24,12 @@ body {
   text-align: center;
   width: 100%;
   /* background-color: #f8f8f8; */
-  background: #68a url(DYfoyUQUQAA_aqy.jpg) no-repeat;
-  background-attachment: fixed;
+  background: #68a url(DYfoyUQUQAA_aqy.jpg) no-repeat center center fixed;
   background-blend-mode: luminosity;
-  background-position: center;
-  background-size: cover; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #wrap {
@@ -121,10 +122,11 @@ main {
 
 #bidplay {
   height: 480px;
-  background: #6bc url(DYfoyUQUQAA_aqy.jpg) no-repeat;
-  background-attachment: fixed;
+  background: #6bc url(DYfoyUQUQAA_aqy.jpg) no-repeat center center fixed;
   background-blend-mode: screen;
-  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
