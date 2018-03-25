@@ -131,7 +131,8 @@ main::before {
 main>*,
 nav {
   mix-blend-mode: normal;
-  background-color: #fefefef0;
+  background-color: #fefefe;
+  opacity: 0.92;
 }
 
 #bidplay {
