@@ -128,7 +128,7 @@ main::before {
   z-index: -1;
 }
 
-main > *, nav {
+main>*, nav {
   background-color: #fefefef0;
 }
 
