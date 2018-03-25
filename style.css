@@ -128,7 +128,8 @@ main::before {
   z-index: -1;
 }
 
-main>*, nav {
+main>*,
+nav {
   background-color: #fefefef0;
 }
 
@@ -138,15 +139,16 @@ main>*, nav {
   height: 480px;
 }
 
-#bidplay>p{
+#bidplay>p {
   color: black;
   line-height: 480px;
   vertical-align: middle;
   font-size: 16vw;
   font-weight: bold;
 }
+
 @media screen and (min-width: 800px) {
-  #bidplay>p{
+  #bidplay>p {
     font-size: 128px;
   }
 }
