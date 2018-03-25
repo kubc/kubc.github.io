@@ -30,7 +30,7 @@ body {
   height: 100%;
   max-width: 960px;
   margin: 0 auto;
-  box-shadow: 0 0 8px #8888;
+  box-shadow: 0 0 8px rgba(127, 127, 127, 0.5);
 }
 
 header {
@@ -38,7 +38,7 @@ header {
   background-color: darkslategray !important;
   color: whitesmoke;
   line-height: 1.5;
-  box-shadow: 0 0 8px #8888;
+  box-shadow: 0 0 8px rgba(127, 127, 127, 0.5);
 }
 
 .div-nav {
@@ -130,9 +130,7 @@ main::before {
 
 main>*,
 nav {
-  mix-blend-mode: normal;
-  background-color: #fefefe;
-  opacity: 0.92;
+  background-color: rgba(254,254,254,240);
 }
 
 #bidplay {
@@ -170,7 +168,8 @@ article p {
   padding: 8px;
   margin: 4px;
   /* color: midnightblue; */
-  box-shadow: 0 0 4px #8884, 0 4px 4px #8884;
+  box-shadow: 0 0 4px rgba(127, 127, 127, 0.25), 0 4px 4px rgba(127, 127, 127, 0.25);
+  opacity: 1;
 }
 
 .question {
@@ -270,7 +269,7 @@ main a {
   position: relative;
   display: inline-block;
   text-decoration: none;
-  text-shadow: 0 1px 2px #8884;
+  text-shadow: 0 1px 2px rgba(127, 127, 127, 0.25);
   -webkit-transition: .3s;
   transition: .3s;
 }
@@ -298,7 +297,7 @@ main a:visited {
 main a:hover {
   -webkit-transform: translate3d(0, -2px, 0);
   transform: translate3d(0, -2px, 0);
-  text-shadow: 0 3px 4px #8888;
+  text-shadow: 0 3px 4px rgba(127, 127, 127, 0.5);
 }
 
 footer {
