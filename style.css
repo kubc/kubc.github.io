@@ -163,8 +163,8 @@ article p {
 #shinkan {
   display: inline-block;
   background: white;
-  padding: 16px;
-  margin: 8px;
+  padding: 8px;
+  margin: 4px;
   /* color: midnightblue; */
   box-shadow: 0 0 4px #8884, 0 4px 4px #8884;
 }
