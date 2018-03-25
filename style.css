@@ -18,37 +18,30 @@ html {
 }
 
 body {
-  font-size: 1.8em;
+  font-size: 1.6em;
   font-family: 'Rounded Mplus 1c';
   line-height: 2;
   text-align: center;
   width: 100%;
-  /* background-color: #f8f8f8; */
-  background: #68a url(DYfoyUQUQAA_aqy.jpg) no-repeat center center fixed;
-  background-blend-mode: luminosity;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 #wrap {
   width: auto;
+  height: 100%;
   max-width: 960px;
   margin: 0 auto;
-  background-color: #fefefef0;
   box-shadow: 0 0 8px #8888;
 }
 
 header {
   padding: 8px;
-  background-color: darkslategray;
+  background-color: darkslategray !important;
   color: whitesmoke;
   line-height: 1.5;
   box-shadow: 0 0 8px #8888;
 }
 
-nav {
+.div-nav {
   max-width: 640px;
   margin-left: auto;
   margin-right: auto;
@@ -114,23 +107,39 @@ nav a:hover::after {
 }
 
 main {
-  padding-bottom: 32px;
   width: 100%;
   overflow-x: hidden;
   color: #244;
 }
 
-#bidplay {
-  height: 480px;
-  background: #6bc url(DYfoyUQUQAA_aqy.jpg) no-repeat center center fixed;
-  background-blend-mode: screen;
+main::before {
+  background: #68a url(DYfoyUQUQAA_aqy.jpg) no-repeat center center;
+  background-blend-mode: luminosity;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  z-index: -1;
+}
+
+main > *, nav {
+  background-color: #fefefef0;
+}
+
+#bidplay {
+  mix-blend-mode: screen;
+  background-color: #6ab;
+  height: 480px;
 }
 
 #bidplay>p{
+  color: black;
   line-height: 480px;
   vertical-align: middle;
   font-size: 16vw;
@@ -172,20 +181,41 @@ article p {
 }
 
 main h1 {
-  margin: 16px;
-  border-bottom: 4px solid #ada;
+  position: relative;
+  padding: 16px;
   color: #ada;
   line-height: 1.2;
 }
 
+main h1::after {
+  position: absolute;
+  content: '';
+  top: 80%;
+  left: 5%;
+  width: 90%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #ada;
+}
+
 main h2 {
+  position: relative;
   display: inline-block;
-  padding: 4px 16px;
+  padding: 12px;
   color: #478;
   font-weight: bolder;
-  border-bottom: 4px solid #8ce;
-  border-radius: 2px;
   line-height: 1.2;
+}
+
+main h2::after {
+  position: absolute;
+  content: '';
+  top: 85%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #8ce;
 }
 
 main ul {
@@ -269,6 +299,6 @@ main a:hover {
 
 footer {
   clear: both;
-  background-color: #333;
+  background-color: #333 !important;
   color: #eee;
 }
