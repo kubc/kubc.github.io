@@ -4,7 +4,7 @@ function initMap() {
       lat: 35.025,
       lng: 135.78
     },
-    zoom: 16.8
+    zoom: 16.5
   });
   const opts = [{
     position: new google.maps.LatLng(35.024, 135.77876),
