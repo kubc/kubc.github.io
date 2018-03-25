@@ -2,7 +2,9 @@ let mapLoaded = false;
 if (window.history && window.history.pushState) {
 	const _hostname = location.hostname;
 	window.history.replaceState(_hostname, null, location.pathname);
-	const updateMenu = () => {
+	const init = () => {
+		const height = window.getComputedStyle($('main')[0], '::before').getPropertyValue('height');
+		$('head').append(`<style>main::before{height:${height};}`);
 		const current = $('#currentPage').text();
 		$('nav a').each((i, e) => {
 			const target = $(e);
@@ -25,10 +27,10 @@ if (window.history && window.history.pushState) {
 	};
 	const loadContents = url => {
 		$('main').load(url + ' main > *', () => {
-			updateMenu();
+			init();
 		});
 	};
-	updateMenu();
+	init();
 	$(document).on('click', 'nav a, .ps', e => {
 		e.preventDefault();
 		const url = $(e.currentTarget).attr('href');
