@@ -130,6 +130,7 @@ main::before {
 
 main>*,
 nav {
+  mix-blend-mode: normal;
   background-color: #fefefef0;
 }
 
