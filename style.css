@@ -130,7 +130,7 @@ main::before {
 
 main>*,
 nav {
-  background-color: rgba(254,254,254,240);
+  background-color: rgba(254, 254, 254, 0.92);
 }
 
 #bidplay {
