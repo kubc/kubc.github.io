@@ -30,7 +30,20 @@ if (window.history && window.history.pushState) {
 			init();
 		});
 	};
-	init();
+	if ($('#currentPage').text() === '301') {
+		loadContents('.');
+		window.history.replaceState(_hostname, null, '/');
+		$.getScript('https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.2.0/js/iziToast.min.js', () => {
+			iziToast.info({
+				close: true,
+				message: 'このページへは旧サイトからリダイレクトされて来ています。ブックマークは現在のURL (https://kubc.github.io) でお願いします。',
+				position: 'bottomCenter',
+				timeout: false
+			});
+		});
+	} else {
+		init();
+	}
 	$(document).on('click', 'nav a, .ps', e => {
 		e.preventDefault();
 		const url = $(e.currentTarget).attr('href');
