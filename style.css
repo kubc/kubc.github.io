@@ -167,7 +167,6 @@ article p {
   background: white;
   padding: 8px;
   margin: 4px;
-  /* color: midnightblue; */
   box-shadow: 0 0 4px rgba(127, 127, 127, 0.25), 0 4px 4px rgba(127, 127, 127, 0.25);
   opacity: 1;
 }
