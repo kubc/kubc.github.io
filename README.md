@@ -4,9 +4,9 @@ KUBC (Kyoto University Contract Bridge Club)'s official website.
 京都大学コントラクトブリッジクラブの公式ウェブサイトです。
 
 ## Description
-このリポジトリの内容は、[GitHub Pages](https://pages.github.com/)の機能により https://kubc.github.io/ 以下で公開されています。
+このリポジトリの`master`ブランチの内容は、[GitHub Pages](https://pages.github.com/)の機能により https://kubc.github.io/ 以下で公開されています。
 
-したがって、`src/`以下や`package.json`、このREADMEなども公開されてしまっていますが気にしないことにしています。
+`develop`ブランチにプッシュすると[Circle CI](https://circleci.com/)上で`npm run build`をし、`dist/`以下に出力されたものが`master`ブランチへプッシュされます。
 
 ## Set Up
 ```bash
@@ -15,16 +15,13 @@ $ npm install
 
 ## Usage
 htmlファイルは`src/`以下で[EJS](http://ejs.co/)のソースを編集し、
-[ejs-cli](https://github.com/fnobi/ejs-cli)でコンパイルしてルート直下に出力しています。
+[ejs-cli](https://github.com/fnobi/ejs-cli)でコンパイルして`dist/`以下に出力しています。
+
+また、`static/`以下も`dist/`以下にコピーしています。
 
 その後、timestamp.jsでhtmlファイル内の`<t xxx.css t>`のようなテンプレートを`xxx.css?0123456789`のように置換しています。
 
 これらは、
-```bash
-$ npm run ejs
-$ npm run timestamp
-```
-または一括で
 ```bash
 $ npm run build
 ```
