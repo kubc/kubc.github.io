@@ -1,4 +1,6 @@
 # kubc.github.io
+[![CircleCI](https://circleci.com/gh/kubc/kubc.github.io/tree/develop.svg?style=svg)](https://circleci.com/gh/kubc/kubc.github.io/tree/develop)
+
 KUBC (Kyoto University Contract Bridge Club)'s official website.
 
 京都大学コントラクトブリッジクラブの公式ウェブサイトです。
@@ -6,7 +8,7 @@ KUBC (Kyoto University Contract Bridge Club)'s official website.
 ## Description
 このリポジトリの`master`ブランチの内容は、[GitHub Pages](https://pages.github.com/)の機能により https://kubc.github.io/ 以下で公開されています。
 
-`develop`ブランチにプッシュすると[Circle CI](https://circleci.com/)上で`npm run build`をし、`dist/`以下に出力されたものが`master`ブランチへプッシュされます。
+`develop`ブランチにプッシュすると[Circle CI](https://circleci.com/)上で`npm run build`が実行され`dist/`以下に出力されたものが`master`ブランチへプッシュされます。
 
 ## Set Up
 ```bash
