@@ -8,10 +8,11 @@
   },
   "scripts": {
     "start": "npm run build && npm run serve",
-    "build": "npm run ejs && npm run timestamp",
-    "serve": "http-server -c-1 -o",
-    "ejs": "ejs-cli --base-dir src '*.ejs' --out .",
-    "timestamp": "node src/timestamp.js"
+    "build": "npm run clear && npm run ejs && cp -r static/* dist && npm run timestamp",
+    "serve": "cd dist && http-server -c-1 -o",
+    "ejs": "ejs-cli --base-dir src '*.ejs' --out dist",
+    "timestamp": "node src/timestamp.js",
+    "clear": "ls -a dist | grep -vE '^\\.$|^\\.\\.$|.gitkeep' | xargs rm -fr"
   },
   "repository": {
     "type": "git",
