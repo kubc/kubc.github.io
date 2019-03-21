@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "KUBC's official website.",
   "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
   "scripts": {
     "start": "npm run build && npm run serve",
     "build": "npm run clear && npm run ejs && cp -r static/* dist && npm run timestamp",
