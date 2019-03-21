@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /src/
+Disallow: /.gitignore
+Disallow: /301.html
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /README.md
