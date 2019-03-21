@@ -12,6 +12,9 @@ jobs:
       - run:
           name: update-npm
           command: "sudo npm install -g npm@latest"
+      - run:
+          name: install-rsync
+          command: sudo yum install rsync
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
