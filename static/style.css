@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'Rounded Mplus 1c';
   src: url(https://fonts.gstatic.com/ea/roundedmplus1c/v1/RoundedMplus1c-Regular.woff) format('woff');
+  font-display: swap;
 }
 
 * {
