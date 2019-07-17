@@ -30,7 +30,7 @@
   "devDependencies": {
     "ejs-cli": "^2.0.1",
     "http-server": "^0.11.1",
-    "npm": "^6.8.0",
-    "replace-in-file": "^3.4.3"
+    "npm": "^6.10.1",
+    "replace-in-file": "^3.4.4"
   }
 }
